@@ -1,0 +1,63 @@
+:root{
+    --jaune:#ECCF65;
+    --noir:#0A2F4A;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+.entete{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.entete button{
+    padding: 0em 1.5em 0em 1.5em;
+    margin: 1.5em;
+    background-color: var(--noir);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.left{
+    margin-left: 3%;
+}
+form label{
+    margin-left: 3%;
+}
+form input{
+   padding: 0.5em 2.3em 0.5em 2.3em;
+   background-color: var(--jaune);
+   border: none;
+   border-radius: 5px;
+   margin: 0.5em;
+}
+form select{
+    padding: 0.5em 6.4em 0.5em 6.4em;
+    background-color: var(--jaune);
+    border: none;
+    border-radius: 5px;
+    margin: 0.5em;
+}
+.inscrire{
+    background-color: var(--noir);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5em 6.4em 0.5em 6.4em;
+}
+.right{
+    margin-right: 4%;
+}

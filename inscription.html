@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/insc.css">
+    <title>Inscription</title>
+</head>
+<body>
+    <header>
+        <div class="entete">
+            <img src="img/logo.png" alt="logo">
+            <button><a href="connexion.html">Se Connecter</a></button>
+        </div>
+    </header>
+    <main>
+        <div class="left">
+           <h1>Inscription</h1>
+           <h4>Salut,une nouvelle aventure commence</h4>
+           <h5>Vos Informations</h5>
+           <form action="#">
+               <label for="nom">Nom complet</label><br>
+               <input type="text" name="nom" placeholder="Votre nom"><br>
+               <label for="email">Email</label><br>
+               <input type="text" name="mail" placeholder="Votre email"><br>
+               <label for="mdp">Mot de passe</label><br>
+               <input type="password" name="mdp" placeholder="Entrer Votre mot de passe"><br>
+               <label for="mdp">Confirmer Mot de passe</label><br>
+               <input type="password" name="mdp" placeholder="Entrer Votre mot de passe"><br>
+               <label for="mdp">Filiere</label><br>
+               <select name="filiere" id="filiere">
+                <option value="GIT">GIT</option>
+                <option value="GME">GME</option>
+                <option value="GEEA">GEEA</option>
+                <option value="GC">GC</option>
+               </select><br>
+               <input type="submit" value="S'Inscrire " class="inscrire">
+           </form>
+        </div>
+        <div class="right">
+            <img src="img/signup.png" alt="inscription">
+        </div>
+    </main>
+</body>
+</html>

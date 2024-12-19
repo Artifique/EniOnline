@@ -1,0 +1,156 @@
+:root{
+    --jaune:#ECCF65;
+    --noir:#0A2F4A;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+/* Navbar */
+.navbar{
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    /* align-items: center; */
+    display: flex;
+    justify-content: space-between;
+        
+}
+nav ul{
+    display: flex;
+    list-style-type:none;
+}
+nav ul li{
+    padding-top: 1%;
+    margin: 0 15px;
+  
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 0.3rem 1.3rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--noir);
+    position: relative;
+}
+nav ul li a:hover{
+ padding-bottom:3%;
+ border-bottom: 3px solid var(--jaune);
+}
+.logo img{
+    margin-top: -18%;
+    height: 4em;
+    width: 4em;
+}
+.user img{
+    padding-top: 1%;
+    /* margin: 0 15px; */
+    height: 3em;
+    width: 3em;
+}
+/* Fin Navbar */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer{
+    background-image: url(img/rect.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.parti1{
+    margin-top: 4.2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+}
+.civilite{
+    display: flex;
+    flex-direction: column;
+}
+.doniso{
+    display: flex;
+    flex-flow: row wrap;
+}
+.doniso h4{
+color: white;
+font-size: 1.5em;
+}
+button{
+    margin: 1em;
+    padding: 0.6em;
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+}
+.mail,.localisation,.phone{
+    display: flex;
+    flex-flow: row wrap;
+}
+.mail small,.localisation small,.phone small{
+    color: white;
+    font-size: 1.2;
+    margin: 0.5em;
+}
+.mail img,.localisation img,.phone img{
+    width:1.2em;
+    height: 1.4em;
+}
+.parti2 nav ul{
+    display: flex;
+    list-style-type:none;
+}
+
+.parti2 nav ul li a{
+    text-decoration: none;
+    padding: 0.3rem 1.3rem;
+    font-size: 17px;
+    font-weight: bold;
+    color:white;
+    position: relative;
+    
+}
+
+
+
+
+
+
+

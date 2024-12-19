@@ -1,0 +1,249 @@
+:root {
+    --jaune: #ECCF65;
+    --noir: #0A2F4A;
+  }
+  
+  body
+  {
+    position: relative;
+    overflow: clip;
+  }
+  
+  /* Navbar */
+  .navbar {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    padding-top: 1%;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    padding: 0.3rem 1.3rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--noir);
+    position: relative;
+  }
+  
+  nav ul li a:hover {
+    padding-bottom: 3%;
+    border-bottom: 3px solid var(--jaune);
+  }
+  
+  .logo img {
+    margin-top: -18%;
+    height: 4em;
+    width: 4em;
+  }
+  
+  .user img {
+    padding-top: 1%;
+    height: 3em;
+    width: 3em;
+  }
+  
+  /* Fin Navbar */
+  
+  .titre {
+    color: var(--noir);
+    text-align: center;
+  }
+  
+  .tout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .formulaire {
+    display: flex;
+    justify-content: center;
+  }
+  
+  form {
+    background-color: var(--noir);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  form input {
+    padding: 0.5em 2.1em 0.5em 2.1em;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0.5em;
+  }
+  
+  .line1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .line1 label {
+    text-align: center;
+  }
+  
+  .mail, .filiere, .ancien, .new {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mail label, .filiere label, .ancien label, .new label {
+    text-align: center;
+  }
+  
+  .line4 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .line1 input {
+    padding: 0.5em 9em 0.5em 9em;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0.5em;
+  }
+  
+  .line4 input {
+    padding: 0.5em 2.3em 0.5em 2.3em;
+    background-color: var(--jaune);
+    border: none;
+    border-radius: 5px;
+    margin: 0.5em;
+  }
+  
+  form select {
+    padding: 0.5em 4.4em 0.5em 4.4em;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0.5em;
+  }
+  
+  .line2, .line3 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  
+  .icones {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  
+  .sup {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .sup h4 {
+    font-size: small;
+    color: rgb(218, 77, 77);
+  }
+  
+  .sup img {
+    position: relative;
+    width: 1.5vw;
+    height: 3vh;
+    margin-top: 8%;
+  }
+  
+  .logout img {
+    position: relative;
+    width: 1.5vw;
+    height: 3.3vh;
+    margin-top: 13%;
+  }
+  
+  .logout {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .logout h4 {
+    font-size: small;
+    color: var(--jaune);
+  }
+  
+  /* Media Queries */
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo img {
+      margin-top: 0;
+      height: 3em;
+      width: 3em;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    .user img {
+      height: 2.5em;
+      width: 2.5em;
+    }
+  
+    .line1 input {
+      padding: 0.5em 6em 0.5em 6em;
+    }
+
+
+    form select {
+      padding: 0.5em 2.4em 0.5em 2.4em;
+    }
+  
+    .sup img {
+      width: 2.5vw;
+      height: 4vh;
+    }
+  
+    .logout img {
+      width: 2.5vw;
+      height: 4.5vh;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .navbar {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    nav ul {
+      flex-direction: row;
+    }
+  
+    nav ul li {
+      margin: 0 20px;
+    }
+  }

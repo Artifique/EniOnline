@@ -1,0 +1,205 @@
+:root{
+ --trait: #fe6400;
+ --cercle: blue;
+ --fond: #efefef;
+ --container: gold;
+}
+*{
+    position: relative;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main
+{
+    /* background: var(--fond); */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.container
+{
+    height: 90vh;
+    width: 90vw;
+    margin-top: 10px;
+    padding: 50px;
+    display: grid;
+    /* border: 1px solid var(--container); */
+    grid-template-columns: 0.75fr repeat(4, 1fr) 0.75fr;
+    grid-template-rows: repeat(2, 0.75fr) repeat(3, 0.5fr);
+
+}
+.circlemb, .circleb, .container{border-radius: 5px;}
+
+li{
+    list-style-type: none;
+    /* border: 1px solid green; */
+}
+.alphadiv
+{
+    position: absolute;
+    /* top: -1px; */
+}
+
+.circle, .circlem, .circlem1
+{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.circle, .circleb, .circlem,.circlem1, .circlemb
+{
+    background: var(--fond);
+    border: 3px solid var(--cercle);
+    z-index: 1000;
+}
+.circlemb, .circleb
+{
+    width: 50px;
+    height: 50px;
+}
+.circlemb, .circleb, .circlem
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.b2:after, .b3:after, .b4:after
+{
+    display: block;
+    position: absolute;
+    left: calc(100% + 5px);
+    /* border: 1px solid lightblue; */
+    font-weight: bold;
+}
+.b1:after
+{
+    content: 'Systeme informatique et logiciel';
+    display: block;
+    position: absolute;
+    right: calc(100% + 5px);
+    /* border: 1px solid lightblue; */
+    font-weight: bold;
+    text-align: right;
+}
+.b2:after
+{
+    content: 'Systeme informatique et logiciel';
+}
+.b3:after
+{
+    content: 'Systeme informatique et logiciel';
+}
+.b4:after
+{
+    content: 'Systeme informatique et logiciel';
+}
+.b5:after
+{
+    content: 'Ingenieur en telecom et reseaux';
+    display: block;
+    position: absolute;
+    top: calc(100% + 5px);
+    /* border: 1px solid lightblue; */
+    font-weight: bold;
+    width: 100px;
+}
+.b6:after
+{
+    content: 'Ingenieur en telecom et reseaux';
+    display: block;
+    position: absolute;
+    right: calc(100% + 5px);
+    /* border: 1px solid lightblue; */
+    font-weight: bold;
+    width: 100px;
+}
+.b7:after
+{
+    content: 'Ingenieur en telecom et reseaux';
+    display: block;
+    position: absolute;
+    left: calc(100% + 5px);
+    /* border: 1px solid lightblue; */
+    font-weight: bold;
+    width: 100px;
+}
+.b8:after
+{
+    content: 'Ingenieur en telecom et reseaux';
+    display: block;
+    position: absolute;
+    left: calc(100% + 5px);
+    /* border: 1px solid lightblue; */
+    font-weight: bold;
+    width: 100px;
+}
+.b9:after
+{
+    content: 'Ingenieur en telecom et reseaux';
+    display: block;
+    position: absolute;
+    left: calc(100% + 5px);
+    /* border: 1px solid lightblue; */
+    font-weight: bold;
+    width: 100px;
+}
+/* .b1:after, .b2:after, .b3:after, .b4:after, .b5:after
+{
+    content: 'Systeme informatique et logiciel';
+}
+.b1:after, .b2:after, .b3:after, .b4:after, .b5:after
+{
+    content: 'Systeme informatique et logiciel';
+}
+.b1:after, .b2:after, .b3:after, .b4:after, .b5:after
+{
+    content: 'Systeme informatique et logiciel';
+} */
+.circlemb, .circlem
+{
+    bottom: -1px;
+    transform: translatey(50%) translatex(-50%);
+}
+.circleb, .circlem1, .circle
+{
+    transform: translatey(-50%) translatex(50%);
+}
+.circleb, .circle{right: 0px;}
+.circlem1{right: -50%;}
+.topm, .top
+{
+    height: 3px;
+    transform: translatey(-50%);
+}
+.top
+{
+    width: 100%;
+}
+.left, .m
+{
+    width: 3px;
+    height: 100%;
+    transform: translatex(-50%);
+}
+.left, .m, .topm, .top
+{
+    border: 1px solid var(--trait);
+    background-color: var(--trait);
+    z-index: 100;
+}
+.left, .top, .topm, .circleb, .circlem1, .circle{top: -1px;}
+.m, .circlemb, .circlem {left: 50%;}
+.topm
+{
+    width: 50%;
+}
+
+.top:hover, .topm:hover, .left:hover, .m:hover
+{
+    border: 1px solid green;
+    background-color: green;
+}
